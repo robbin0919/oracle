@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "settings": {
+    "collect_interval_minutes": 5,
+    "retention_days": 30,
+    "monitoring": {
+      "include_idle_sessions": false,
+      "min_session_time_seconds": 300,
+      "capture_ash": true,
+      "capture_plans": true
+    },
+    "notification": {
+      "enable_alerts": false,
+      "alert_email": "",
+      "alert_on": {
+        "deadlock": true,
+        "blocking_sessions": true,
+        "long_running_sql": true
+      }
+    }
+  },
+  "maintenance": {
+    "auto_purge": true,
+    "purge_schedule": "0 0 * * *",
+    "compress_after_days": 7
+  }
+}

@@ -28,3 +28,19 @@ SessionMonitor/
 ├── upgrade/              # 版本升級腳本  
 ├── utils/                # 工具腳本  
 └── config/               # 配置文件  
+
+## 系統組件
+- 資料收集模組: 每5分鐘自動收集活躍會話資訊  
+- 會話分析模組: 提供多個視圖用於問題分析  
+- 死鎖捕獲觸發器: 發生死鎖時自動收集詳細資訊  
+
+## 使用方法  
+### 查詢長時間運行的會話  
+```sql
+SELECT * FROM v_long_sessions
+ORDER BY minutes_running DESC;
+
+##  分析死鎖情況  
+```sql
+SELECT * FROM v_deadlock_analysis
+WHERE capture_time > SYSDATE - 1;
