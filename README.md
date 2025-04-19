@@ -14,17 +14,17 @@
 1. 使用具有 DBA 權限的用戶登錄資料庫
 2. 運行安裝腳本:
 
-## 目錄結構
-SessionMonitor/
-├── install/              # 安裝腳本
-├── objects/              # 資料庫對象定義
-│   ├── tables/           # 表結構定義
-│   ├── indexes/          # 索引定義
-│   ├── procedures/       # 程序定義  
-│   ├── jobs/             # 作業排程定義
-│   ├── views/            # 視圖定義
-│   └── triggers/         # 觸發器定義
-├── rollback/             # 回滾腳本
-├── upgrade/              # 版本升級腳本
-├── utils/                # 工具腳本
-└── config/               # 配置文件
+## 目錄結構  
+SessionMonitor/  
+├── install/              # 安裝腳本  
+├── objects/              # 資料庫對象定義  
+│   ├── tables/           # 表結構定義  
+│   ├── indexes/          # 索引定義  
+│   ├── procedures/       # 程序定義    
+│   ├── jobs/             # 作業排程定義  
+│   ├── views/            # 視圖定義  
+│   └── triggers/         # 觸發器定義  
+├── rollback/             # 回滾腳本  
+├── upgrade/              # 版本升級腳本  
+├── utils/                # 工具腳本  
+└── config/               # 配置文件  
