@@ -15,7 +15,7 @@
 2. 運行安裝腳本:
 
 ## 目錄結構  
-SessionMonitor/  
+SessionMonitor_V1/  
 ├── install/              # 安裝腳本  
 ├── objects/              # 資料庫對象定義  
 │   ├── tables/           # 表結構定義  
