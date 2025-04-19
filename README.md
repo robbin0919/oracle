@@ -39,8 +39,10 @@ SessionMonitor/
 ```sql
 SELECT * FROM v_long_sessions
 ORDER BY minutes_running DESC;
+```
 
 ##  分析死鎖情況  
 ```sql
 SELECT * FROM v_deadlock_analysis
 WHERE capture_time > SYSDATE - 1;
+```
